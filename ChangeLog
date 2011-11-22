@@ -1,5 +1,11 @@
 2011-11-22  Steffen Schwigon  <steffen.schwigon@amd.com>
 
+	* v3.0.3
+
+	* Bummer! Fix wrong pathname and missing metainfo.
+
+2011-11-22  Steffen Schwigon  <steffen.schwigon@amd.com>
+
 	* v3.0.2
 
 	* polishing:
