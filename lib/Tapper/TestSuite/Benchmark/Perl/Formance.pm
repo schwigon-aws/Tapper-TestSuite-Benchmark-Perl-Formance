@@ -219,8 +219,8 @@ sub main {
 
         $output   .= "1..1\n";
         $output   .= "# Tapper-Section: metainfo\n";
-        $output   .= tapper_suite_meta;
-        $output   .= tapper_section_meta;
+        $output   .= tapper_suite_meta   || "";
+        $output   .= tapper_section_meta || "";
 
         $output   .= "1..1\n";
         $output   .= "# Tapper-Section: results\n";
