@@ -52,8 +52,9 @@ sub _starttime_test_program {
 }
 
 sub _perl_gitversion {
-        my $perlpath         = "$^X";
-        my $perl_gitversion  = "$perlpath-gitversion";
+        my $perlpath = "$^X";
+        $perlpath    =~ s,/[^/]*$,,;
+        my $perl_gitversion  = "$perlpath/perl-gitversion";
 
         if (-x $perl_gitversion) {
                 my $gitversion = qx!$perl_gitversion! ;
@@ -93,6 +94,7 @@ sub tapper_section_meta
         $output   .= "# Tapper-starttime-test-program:  $starttime_test_program\n";
         $output   .= "# Tapper-ticket-url:              http://speed.perlformance.net/changes/?rev=$gitversion\n" if $gitversion;
         #$output   .= "# Tapper-moreinfo-url:            http://speed.perlformance.net/changes/?rev=$gitversion\n" if $gitversion;
+        return $output;
 }
 
 sub tapper_suite_meta
