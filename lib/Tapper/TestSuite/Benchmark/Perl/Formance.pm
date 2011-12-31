@@ -92,8 +92,8 @@ sub tapper_section_meta
         $output   .= "# Tapper-language-description:    Perl-$]\n";
         $output   .= "# Tapper-changeset:               $gitversion\n" if $gitversion;
         $output   .= "# Tapper-starttime-test-program:  $starttime_test_program\n";
-        $output   .= "# Tapper-ticket-url:              http://speed.perlformance.net/changes/?rev=$gitversion\n" if $gitversion;
-        #$output   .= "# Tapper-moreinfo-url:            http://speed.perlformance.net/changes/?rev=$gitversion\n" if $gitversion;
+        #$output   .= "# Tapper-ticket-url:              http://speed.perlformance.net/changes/?rev=$gitversion\n" if $gitversion;
+        $output   .= "# Tapper-moreinfo-url:            http://speed.perlformance.net/changes/?rev=$gitversion\n" if $gitversion;
         return $output;
 }
 
