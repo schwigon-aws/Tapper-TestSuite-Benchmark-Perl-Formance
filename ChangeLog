@@ -1,3 +1,9 @@
+2012-01-01  Steffen Schwigon  <steffen.schwigon@amd.com>
+
+	* v3.0.4
+
+	* less verbose (because it might break TAP output)
+
 2011-11-22  Steffen Schwigon  <steffen.schwigon@amd.com>
 
 	* v3.0.3

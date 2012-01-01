@@ -3,7 +3,7 @@ package Tapper::TestSuite::Benchmark::Perl::Formance;
 use strict;
 use warnings;
 
-our $VERSION = '3.000003';
+our $VERSION = '3.000004';
 
 use IO::Socket::INET;
 use Benchmark::Perl::Formance;
