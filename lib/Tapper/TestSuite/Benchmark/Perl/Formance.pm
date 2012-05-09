@@ -1,9 +1,8 @@
 package Tapper::TestSuite::Benchmark::Perl::Formance;
+# ABSTRACT: Tapper - Wrapper for Benchmark::Perl::Formance
 
 use strict;
 use warnings;
-
-our $VERSION = '3.000005';
 
 use IO::Socket::INET;
 use Benchmark::Perl::Formance;
@@ -70,7 +69,7 @@ sub _suite_name            {
                 ($ENV{PERLFORMANCE_TESTMODE_FAST} ? "-fast" : ""),
                );
 }
-sub _suite_version         { $VERSION }
+sub _suite_version         { $Tapper::TestSuite::Benchmark::Perl::Formance::VERSION }
 sub _suite_type            { 'benchmark' }
 sub _reportgroup_arbitrary { $ENV{TAPPER_REPORT_GROUP} }
 sub _reportgroup_testrun   { $ENV{TAPPER_TESTRUN}   }
@@ -242,11 +241,6 @@ sub run
 
 __END__
 
-
-=head1 NAME
-
-Tapper::TestSuite::Benchmark::Perl::Formance - Tapper - Wrapper for Benchmark::Perl::Formance
-
 =head1 SYNOPSIS
 
 You most likely want to run the frontend cmdline tool like this
@@ -271,57 +265,7 @@ You most likely want to run the frontend cmdline tool like this
 
 =head2 usage
 
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-tapper-testsuite-autotest at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Tapper-TestSuite-Benchmark-Perl-Formance>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
-
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Tapper::TestSuite::Benchmark::Perl::Formance
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Tapper-TestSuite-Benchmark-Perl-Formance>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Tapper-TestSuite-Benchmark-Perl-Formance>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Tapper-TestSuite-Benchmark-Perl-Formance>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Tapper-TestSuite-Benchmark-Perl-Formance/>
-
-=back
-
-
-=head1 AUTHOR
-
-AMD OSRC Tapper Team, C<< <tapper at amd64.org> >>
-
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2010-2011 AMD OSRC Tapper Team, all rights reserved.
-
-This program is released under the following license: freebsd
-
-
 =cut
+
 
 1; # End of Tapper::TestSuite::Benchmark::Perl::Formance
