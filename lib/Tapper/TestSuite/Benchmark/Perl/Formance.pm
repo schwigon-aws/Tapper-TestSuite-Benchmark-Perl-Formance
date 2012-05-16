@@ -18,7 +18,7 @@ sub _uname {
 sub _hostname {
         my $hostname = `hostname`;
         chomp $hostname;
-	$hostname = "perl64.org" if $hostname eq "h1891504"; # special case for PerlFormance.Net Æsthetics
+        $hostname = "perl64.org" if $hostname eq "h1891504"; # special case for PerlFormance.Net Æsthetics
         return $hostname;
 }
 
