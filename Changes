@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - verbosity
+        - use moreinfor-url
         - big Dist::Zilla roundhouse kick
 
 2012-01-02  Steffen Schwigon  <steffen.schwigon@amd.com>
