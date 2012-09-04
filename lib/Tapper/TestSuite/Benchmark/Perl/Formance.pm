@@ -164,7 +164,7 @@ sub get_options
         if ($plugins) {
                 $plugins = "--plugins=$plugins";
         } elsif ($ENV{HARNESS_ACTIVE}) {
-                $plugins = "--plugins=Shootout,MooseTS";
+                $plugins = "--plugins=Shootout,DPath";
         }
 
         return {
