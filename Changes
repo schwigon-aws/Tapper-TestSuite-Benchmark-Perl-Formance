@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - other plugins during test
 
 4.0.2     2012-08-16
         - fix script/ -> bin/
