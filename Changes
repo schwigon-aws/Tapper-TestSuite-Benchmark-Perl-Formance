@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+4.0.3     2012-09-04
         - other plugins during test
 
 4.0.2     2012-08-16
