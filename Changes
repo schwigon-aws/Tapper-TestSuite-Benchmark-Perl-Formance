@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - sync with release version
 
 4.0.3     2012-09-04
         - other plugins during test
