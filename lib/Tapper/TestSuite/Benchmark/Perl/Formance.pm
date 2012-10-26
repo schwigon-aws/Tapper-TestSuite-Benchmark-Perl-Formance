@@ -247,6 +247,10 @@ You most likely want to run the frontend cmdline tool like this
 
   $ tapper-testsuite-benchmark-perl-formance -vvv
 
+=head1 DESCRIPTION
+
+This is a Tapper wrapper for L<Benchmark::Perl::Formance>.
+
 =head1 FUNCTIONS
 
 =head2 PerlFormanceResults
